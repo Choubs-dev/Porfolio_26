@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Mon Portfolio Personnel" />
+    <title>Mon Portfolio_26</title>
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/Style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+  </head>
+
+  <body>
+    <header data-bs-theme="auto">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">CHOUABA YVETTE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HTML\A propos.html">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HTML\Projets.html">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HTML\Veille Informatique.html"
+                  >Veille technologique</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button
+                class="btn btn-link nav-link py-2 px-0 px-lg-2"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-label="Toggle theme (auto)"
+              >
+                <svg class="bi my-1 theme-icon-active">
+                  <use href="#circle-half"></use>
+                </svg>
+                <span class="d-lg-none ms-2" id="bd-theme-text"
+                  >Toggle theme</span
+                >
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="bd-theme-text"
+              >
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex align-items-center"
+                    data-bs-theme-value="light"
+                    aria-pressed="false"
+                  >
+                    <svg class="bi me-2 opacity-50 theme-icon">
+                      <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none">
+                      <use href="#check2"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex align-items-center"
+                    data-bs-theme-value="dark"
+                    aria-pressed="false"
+                  >
+                    <svg class="bi me-2 opacity-50 theme-icon">
+                      <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none">
+                      <use href="#check2"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex align-items-center active"
+                    data-bs-theme-value="auto"
+                    aria-pressed="true"
+                  >
+                    <svg class="bi me-2 opacity-50 theme-icon">
+                      <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none">
+                      <use href="#check2"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin de l'en-tête de navigation -->
+
+    <main>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- text de carousel nav -->
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Bienvenue sur mon portfolio</h1>
+                <p class="opacity-75">
+                  Découvrez mes projets et mon parcours en tant que étudiante en BTS SIO option SLAM
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#mesProjets"
+                    >Voir mes projets</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>À propos de moi</h1>
+                <p>
+                  Développeur web passionné avec une expérience dans la création
+                  de sites modernes et réactifs.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="HTML\A propos.html"
+                    >En savoir plus</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Mes Projets</h1>
+                <p>Explorez mes réalisations en développement web.</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="HTML\Projets.html"
+                    >Découvrir</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Fin du carousel -->
+
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h3 class="display-4 fw-bold">
+          Présentation du BTS SIO - Services Informatiques aux Organisations
+        </h3>
+        <div class="col-lg-12 mx-auto">
+          <p class="lead mb-4">
+            Le BTS SIO est une formation de deux ans qui prépare les étudiants à
+            devenir des professionnels de l'informatique. La formation est
+            divisée en deux options :
+            <strong><b>SISR</b></strong> centrée sur les systèmes réseaux et
+            <strong><b>SLAM</b></strong> centrée sur le développement. J'ai
+            choisi le BTS SIO et plus particulièrement l'option
+            <strong style="color: #885200"><b>SLAM</b></strong
+            >. <strong><b>Pourquoi?</b> </strong>Pour me spécialiser dans le
+            développement d'applications et de sites web. Cette formation m'a
+            permis d'acquérir des compétences techniques solides, ainsi que des
+            compétences en gestion de projet et en travail d'équipe,
+            essentielles pour réussir dans le domaine de l'informatique.
+          </p>
+
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a
+              href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
+              class="btn btn-primary btn-lg px-4 gap-3"
+              >En savoir plus</a
+            >
+          </div>
+        </div>
+      </div>
+        
+   <div id="mesProjets" class="px-4 pt-5 my-5 text-center border-bottom"></div>
+<h1 class="text-center mb-4"> Quelques de mes Projets...</h1>
+
+
+      <!-- Début de la section marketing -->
+      <div class="row text-center justify-content-center g-4">
+
+        <!-- Colonne 1: Site de Portfolio -->
+        <div class="col-lg-4">
+          <svg
+            aria-label="Portfolio"
+            class="bd-placeholder-img rounded-circle"
+            height="140"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="140"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Portfolio</title>
+            <rect width="100%" height="100%" fill="#885200"></rect>
+            <text x="30%" y="50%" fill="#FAFAFA" dy=".3em">Portfolio</text>
+          </svg>
+          <h2 class="fw-normal">Site de Portfolio</h2>
+          <p>Un site personnel pour présenter mes compétences et projets.</p>
+        </div>
+        <!-- Colonne 2: Application To-Do List -->
+        <div class="col-lg-4">
+          <svg
+            aria-label="To-Do List"
+            class="bd-placeholder-img rounded-circle"
+            height="140"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="140"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>To-Do List</title>
+            <rect width="100%" height="100%" fill="#885200"></rect>
+            <text x="40%" y="50%" fill="#FAFAFA" dy=".3em">To-Do</text>
+          </svg>
+          <h2 class="fw-normal">Application To-Do List</h2>
+          <p>Gestion des tâches quotidiennes avec une interface intuitive.</p>
+        </div>
+        <!-- Colonne 3: Tableau de synthèse -->
+        <div class="col-lg-4">
+          <svg
+            aria-label="Tableau de synthèse"
+            class="bd-placeholder-img rounded-circle"
+            height="140"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="140"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Tableau de synthèse</title>
+            <rect width="100%" height="100%" fill="#885200"></rect>
+            <text x="30%" y="50%" fill="#FAFAFA" dy=".3em">Tableau</text>
+          </svg>
+          <h2 class="fw-normal">Tableau de synthèse</h2>
+          <p>
+            <a class="btn btn-secondary" href="Tableau de synthese.xlsx">Télécharger &raquo;</a>
+          </p>
+        </div>
+      </div>
+       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-2">
+              <a href="HTML\projets.html"
+              class="btn btn-primary btn-lg px-4 gap-3"
+              >En savoir plus</a
+            >
+          </div>
+      <!-- Fin de la section marketing -->
+
+      <hr class="featurette-divider" />
+
+      <!-- Début de la troisième featurette (Contact) -->
+      <div class="col-lg-6 mx-auto mt-5 mb-5 text-center">
+    <h3 class="featurette-heading fw-normal lh-1" id="contact">
+        Contactez-moi
+    </h3>
+    
+    <div class="p-4 shadow-sm bg-FAFAFA"> <form action="#" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom et prénom</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="nom@exemple.com" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Dites-moi tout..." required></textarea>
+            </div>
+
+            <div class="text-center"> <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+          </div>
+        </div>
+        <!-- Fin de la troisième featurette -->
+
+        <hr class="featurette-divider" />
+      </div>
+      <!-- Fin du conteneur marketing -->
+
+      <!-- Pied de page -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Retour en haut</a></p>
+        <p>
+     <footer>
+
+        <p>
+          &copy; 2026 Mon Portfolio. Tous droits réservés.
+          <i class="fas fa-envelope"></i> Email: yvettejordana3003@gmail.com
+          </p>
+        <p>École de formation: <a href="http://www.imcp.fr">IMCP</a></p>
+      </footer>
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+  </body>
+</html>
+<!-- Fin du document HTML -->

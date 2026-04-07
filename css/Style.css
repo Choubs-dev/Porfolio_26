@@ -1,0 +1,155 @@
+/* Style pour le portfolio */
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--bs-tertiary-color-rgb));
+  background-color: #fafa;
+}
+
+h1 {
+  color: #885200;
+}
+
+h3 {
+  color: #885200;
+}
+
+.row.align-items-center {
+  min-height: 120px; /* Ajustez le texte de "projets" selon mes besoins */
+}
+
+.carousel {
+  margin-bottom: 1rem;
+}
+
+.carousel-inner {
+  background-image: url("../images/plusRogne.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item {
+  height: 32rem; /* Garde la hauteur standard de Bootstrap ou ajuste-la */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* C'est cette ligne qui va sauver ton visage : */
+  background-position: center top;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 40rem;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  color: white;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background-color: #fafa;
+}
+
+.featurette-divider {
+  margin: 2rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+h3.display-4 {
+  background-color: rgba(255, 241, 118, 0.6);
+  color: #885200;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #885200;
+  display: inline-block;
+}
+
+.row.featurette {
+  background-color: #fafa;
+  padding: 2rem 0;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.navbar {
+  padding: 0.25rem 0;
+}
+
+.navbar-dark {
+  background-color: #885200 !important;
+}
+
+/* Suppression des arrondis pour des bords bien carrés */
+.navbar-nav .nav-link {
+  border-radius: 0 !important; /* Force les angles droits */
+  border: 2px solid transparent; /* Prépare la bordure pour l'animation */
+  margin: 0 5px; /* Ajoute un petit espace entre les boutons */
+  transition: all 0.3s ease-in-out; /* Fluidité de l'animation */
+  /* On garde vos réglages précédents */
+
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  color: white !important;
+}
+/* Effet au passage de la souris */
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Léger éclaircissement */
+  border: 2px solid #ffffff; /* Apparition d'une bordure blanche carrée */
+
+  /* Effet de mouvement : le bouton remonte légèrement */
+  transform: translateY(-3px);
+
+  /* Optionnel : ajoute une petite ombre pour accentuer le mouvement */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Suppression de votre ancienne bordure droite pour éviter les conflits */
+.navbar-nav .nav-link {
+  border-right: none !important;
+}
+
+.btn-primary {
+  background-color: #885200;
+  border-color: #885200;
+}
+
+.btn-primary:hover {
+  background-color: #6b4200;
+  border-color: #6b4200;
+}
+
+footer {
+  background-color: #885200;
+  height: auto;
+}
